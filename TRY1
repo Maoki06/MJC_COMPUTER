@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJC Computer Shop</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Styling */
+    header.logo {
+      background: linear-gradient(135deg, #90EE90, #98FB98); /* Light green gradient */
+      padding: 10px 0; /* Reduced padding to make header smaller */
+      width: 100%; /* Ensure full width */
+      display: flex;
+      justify-content: center; /* Center the content */
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border: none; /* Removed white border */
+      margin-top: 20px; /* Add space from navigation bar */
+    }
+
+    /* Logo Container */
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between icon and text */
+      justify-content: flex-start; /* Align logo to the left */
+    }
+
+    .text-color {
+      color: #2c3e50;
+    }
+
+    /* Updated Computer Icon (fa-desktop) styling */
+    .fas.fa-desktop {
+      font-size: 50px; /* Set a smaller size for the icon */
+      color: #2c3e50;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Adding animation to the icon */
+    .fas.fa-desktop:hover {
+      transform: rotate(360deg);
+      color: #2c3e50;
+    }
+
+    /* Logo Text Styling */
+    .mjc {
+      font-size: 50px; /* Reduced logo text size */
+      font-weight: 800;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #2c3e50;
+    }
+
+    .tagline {
+      font-size: 16px; /* Smaller tagline */
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.7);
+      letter-spacing: 1px;
+      margin-top: 5px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Main content section */
+    .main-content {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+    /* Media Queries for larger screens */
+    @media (min-width: 768px) {
+      header.logo {
+        padding: 15px 0; /* Slightly larger padding on larger screens */
+      }
+
+      .fas.fa-desktop {
+        font-size: 60px; /* Slightly larger icon on bigger screens */
+      }
+
+      .mjc {
+        font-size: 60px; /* Larger logo text */
+        letter-spacing: 8px;
+      }
+
+      .tagline {
+        font-size: 20px; /* Larger tagline on big screens */
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="try.html">Home</a></li>
+      <li><a href="try2.html">Services</a></li>
+      <li><a href="try3.html">Developer Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Homepage Content -->
+  <header class="logo">
+    <div class="logo-container">
+      <!-- Desktop Icon (fa-desktop) placed to the left of MJC -->
+      <i class="fas fa-desktop text-color"></i>
+      <div class="logo-text">
+        <span class="mjc text-color">MJC</span>
+        <div class="tagline text-color">Computer Shop</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-content">
+    <h1>Welcome to MJC Computer Shop</h1>
+    <p>Your one-stop solution for all your computing needs!</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <h2>About MJC Computer Shop</h2>
+    <p>At MJC Computer Shop, we are dedicated to providing the best products and services for all your computing needs. Whether you're looking for a new custom-built PC, need computer repairs, or want expert advice, we are here to help. Our experienced team ensures that every customer receives top-quality service and a personalized experience.</p>
+
+    <p>We offer a wide range of products from high-performance gaming PCs, laptops, accessories, and all the latest technology to meet your requirements. Our services include hardware repairs, software installations, networking, and more. With MJC Computer Shop, you can trust that we’ll help you find exactly what you need for both personal and business computing needs.</p>
+
+    <p>Customer satisfaction is our top priority, and we’re always here to answer your questions and offer expert guidance. Thank you for choosing MJC Computer Shop!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MJC Computer Shop. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
