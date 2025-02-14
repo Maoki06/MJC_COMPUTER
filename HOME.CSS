@@ -1,0 +1,82 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navigation Bar Styles */
+  nav {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Logo Section */
+  header.logo {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .fas.fa-laptop-code {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logo-text {
+    font-size: 2.5rem;
+  }
+  
+  .mjc {
+    font-weight: bold;
+    color: #f1edea;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #666; /* Added color for .tagline */
+  }
+  
