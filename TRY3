@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Info - MJC Computer Shop</title>
+  <link rel="stylesheet" href="dev.css"> <!-- Ensure the path is correct -->
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Styling */
+    header.logo {
+      background: linear-gradient(135deg, #90EE90, #98FB98); /* Light green gradient */
+      padding: 10px 0; /* Reduced padding */
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Center the content */
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border: none; /* Removed white border */
+      margin-top: 20px;
+    }
+
+    /* Logo Container */
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between icon and text */
+      justify-content: center;
+    }
+
+    .text-color {
+      color: #2c3e50;
+    }
+
+    /* Updated Computer Icon (fa-laptop-code) styling */
+    .fas.fa-laptop-code {
+      font-size: 50px;
+      color: #2c3e50;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .fas.fa-laptop-code:hover {
+      transform: rotate(360deg);
+      color: #2c3e50;
+    }
+
+    /* Logo Text Styling */
+    .mjc {
+      font-size: 50px; /* Reduced logo text size */
+      font-weight: 800;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #2c3e50;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.7);
+      letter-spacing: 1px;
+      margin-top: 5px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Developer Info Section */
+    .developer-info {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .developer-info h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .developer-info p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* Developer Profile */
+    .developer {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center; /* Align image and text horizontally */
+      justify-content: center;
+      gap: 20px; /* Space between the image and text */
+    }
+
+    .developer img {
+      width: 150px; /* Set the width of the image */
+      height: 150px; /* Set the height */
+      border-radius: 50%; /* Round image */
+      object-fit: cover;
+    }
+
+    .developer h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .developer p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .developer a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    .developer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Thanks Section */
+    .thanks {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .thanks h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .thanks p {
+      font-size: 18px;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+    /* Media Queries for larger screens */
+    @media (min-width: 768px) {
+      header.logo {
+        padding: 15px 0; /* Slightly larger padding */
+      }
+
+      .fas.fa-laptop-code {
+        font-size: 60px;
+      }
+
+      .mjc {
+        font-size: 60px;
+        letter-spacing: 8px;
+      }
+
+      .tagline {
+        font-size: 20px;
+      }
+
+      .developer img {
+        width: 180px; /* Larger image on bigger screens */
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="try.html">Home</a></li>
+      <li><a href="try2.html">Services</a></li>
+      <li><a href="try3.html">Developer Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Developer Info Page Content -->
+  <header class="logo">
+    <div class="logo-container">
+      <!-- Desktop Icon Updated -->
+      <i class="fas fa-desktop text-color"></i> <!-- Changed from fa-laptop-code to fa-desktop -->
+      <div class="logo-text">
+        <span class="mjc text-color">MJC</span>
+        <div class="tagline text-color">Computer Shop</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="developer-info">
+    <h1>Meet the Developers</h1>
+    <p>We are the developers behind MJC Computer Shop website. Our goal is to provide the best online experience for our customers, making it easy for you to explore our services and get in touch with us.</p>
+
+    <div class="developer">
+      <img src="hahaha.png" alt="Myko Espina"> <!-- Make sure the image file is correctly placed in your project directory -->
+      <div>
+        <h2>Myko Espina</h2>
+        <p>Myko Espina is one of the lead developers of the MJC Computer Shop website. With a passion for technology and coding, he is committed to ensuring that our website functions smoothly and is user-friendly.</p>
+        <p><strong>Email:</strong> <a href="mailto:Mykolagura80@gmail.com">Mykolagura80@gmail.com</a></p>
+        <p><strong>Contact:</strong> 09948134583</p>
+      </div>
+    </div>
+
+    <div class="thanks">
+      <h3>Special Thanks</h3>
+      <p>We would like to extend our gratitude to everyone who supported us in developing this website. We are committed to continuing to improve the user experience and provide the best service possible.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MJC Computer Shop. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
